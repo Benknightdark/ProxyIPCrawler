@@ -9,7 +9,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 
 res = requests.get('https://free-proxy-list.net/')
-m = re.findall('\d+\.\d+\.\d+\.\d+:\d+', res.text)
+m = re.findall(r'\d+\.\d+\.\d+\.\d+:\d+', res.text)
 
 
 def get_ip(ip):
